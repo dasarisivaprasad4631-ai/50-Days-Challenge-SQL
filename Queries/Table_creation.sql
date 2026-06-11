@@ -31,3 +31,36 @@ CREATE TABLE performance
     rating_2022 varchar(40),
     rating_2023 varchar(40),
     rating_2024 varchar(40));
+
+
+
+
+
+
+
+
+
+use 50_Days_Challenge_Sql;
+
+create table cleaned_departments
+as
+select*from  departments;
+
+
+create table cleaned_employees
+as
+select*from employees;
+
+
+create table cleaned_salaries
+as
+select*from salaries;
+
+create table cleaned_attendance
+as
+select*from attendance;
+
+create table cleaned_Performance
+as
+select*from performance;
+
