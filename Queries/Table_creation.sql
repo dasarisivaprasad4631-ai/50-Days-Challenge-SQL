@@ -47,9 +47,10 @@ as
 select*from  departments;
 
 
-create table cleaned_employees
-as
-select*from employees;
+insert into cleaned_employees
+
+select * from employees
+where emp_id is not null and emp_id != '';
 
 
 create table cleaned_salaries
@@ -64,3 +65,4 @@ create table cleaned_Performance
 as
 select*from performance;
 
+TRUNCATE table cleaned_employees;
