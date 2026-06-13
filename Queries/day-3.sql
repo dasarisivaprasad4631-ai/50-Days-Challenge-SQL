@@ -10,7 +10,7 @@ where emp_name is NULL or emp_name = '';
 
 update cleaned_employees
 set city='Delhi'
-where emp_id=13;
+where emp_id = 13;
 
 
 update cleaned_employees
